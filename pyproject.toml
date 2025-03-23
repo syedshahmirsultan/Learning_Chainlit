@@ -7,10 +7,15 @@ authors = [
     { name = "syedshahmirsultan", email = "syedshahmirsultan@gmail.com" }
 ]
 requires-python = ">=3.11"
-dependencies = []
+dependencies = [
+    "chainlit>=2.4.3",
+
+]
 
 [project.scripts]
-chain-hello = "chain_hello:main"
+chain-main = "chain_hello:main"
+chain-hello = "chain_hello.hello:handle_message"
+
 
 [build-system]
 requires = ["hatchling"]
