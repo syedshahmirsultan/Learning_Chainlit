@@ -36,7 +36,6 @@ runner = Runner.run_sync(
     input = "What is the capital of the moon?",
     run_config=run_config
 )
-print(runner.final_output)
 
 @cl.on_message
 async def handle_message(message:cl.Message):
